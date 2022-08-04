@@ -60,6 +60,9 @@ class Main extends React.Component{
     <p>{ this.state.cityName }</p>
     <p>{ this.state.lat }</p>
     <p>{ this.state.lon }</p>
+    <img src={`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_API_KEY}&center=${this.state.lat},${this.state.lon}&zoom=9`} alt={this.state.cityName}/>
+
+
     </>
     }
       </>
